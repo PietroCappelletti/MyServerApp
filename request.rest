@@ -1,0 +1,40 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGF1dG55IiwiaWF0IjoxNjM1ODczMjk5LCJleHAiOjE2MzU4NzMzMTl9.tRjUIg-rNNokFBFDZzn8B8g54SjvEUewmiKSTNp64ZM
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name": "Hautny",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "name": "Hautny",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3000/users/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGF1dG55IiwicGFzc3dvcmQiOiIkMmIkMTAkYkNYNTdiZzdCd2VzUzdmQkRUY05MdUNrdFM1NE91YWJnejdrc3dHM3R4OHVZZXlzYUdPQ08iLCJpYXQiOjE2MzU4NzMyMzJ9.6b32B-L4AFwV1_5hi4Ox0df4ZmC8RI3_04syYbpkbQc"
+}
+
+###
+
+DELETE http://localhost:3000/users/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSGF1dG55IiwicGFzc3dvcmQiOiIkMmIkMTAkYkNYNTdiZzdCd2VzUzdmQkRUY05MdUNrdFM1NE91YWJnejdrc3dHM3R4OHVZZXlzYUdPQ08iLCJpYXQiOjE2MzU4NzMyMzJ9.6b32B-L4AFwV1_5hi4Ox0df4ZmC8RI3_04syYbpkbQc"
+}
